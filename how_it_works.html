@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How It Works - EcoReturn's Circular Economy Process</title>
+    <meta name="description" content="Discover how EcoReturn transforms packaging waste into environmental impact. Step-by-step guide to our circular economy platform with interactive tutorials and progress tracking." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="main.css">
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fecoreturn6410back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary"> <ul>
+            <li><a href="homepage.html"></a></li>
+            <li><a href="about.html"></a></li>
+            <li><a href="how_it_works.html"></a></li>
+            <li><a href="business_solutions.html"></a></li>
+            <li><a href="impact_dashboard.html"></a></li>
+            <li><a href="support.html"></a></li>
+          </ul>
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border-light">
+        <div class="container-custom">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <svg class="w-8 h-8 text-secondary" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M16 2L8 8v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V8l-8-6z"/>
+                        <path d="M12 16l3 3 6-6" stroke="white" stroke-width="2" fill="none"/>
+                    </svg>
+                    <span class="text-xl font-bold text-gradient">EcoReturn</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors">Home</a>
+                    <a href="about.html" class="text-text-secondary hover:text-primary transition-colors">About</a>
+                    <a href="how_it_works.html" class="text-primary font-semibold">How It Works</a>
+                    <a href="impact_dashboard.html" class="text-text-secondary hover:text-primary transition-colors">Impact</a>
+                    <a href="business_solutions.html" class="text-text-secondary hover:text-primary transition-colors">Business</a>
+                    <a href="support.html" class="text-text-secondary hover:text-primary transition-colors">Support</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <button class="btn-primary">Start Returning</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-border-light">
+                    <a href="homepage.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Home</a>
+                    <a href="about.html" class="block px-3 py-2 text-text-secondary hover:text-primary">About</a>
+                    <a href="how_it_works.html" class="block px-3 py-2 text-primary font-semibold">How It Works</a>
+                    <a href="impact_dashboard.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Impact</a>
+                    <a href="business_solutions.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Business</a>
+                    <a href="support.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Support</a>
+                    <div class="px-3 py-2">
+                        <button class="btn-primary w-full">Start Returning</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-16 bg-gradient-to-br from-primary-50 to-secondary-50 overflow-hidden">
+        <div class="container-custom">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+                    How <span class="text-gradient">EcoReturn</span> Works
+                </h1>
+                <p class="text-xl md:text-2xl text-text-secondary mb-8 animate-slide-up">
+                    Transform your packaging waste into measurable environmental impact through our simple, 
+                    science-backed circular economy process.
+                </p>
+                
+                <!-- Quick Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12 animate-slide-up">
+                    <div class="bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-white/50">
+                        <div class="impact-counter text-secondary">4</div>
+                        <div class="text-sm text-text-secondary">Simple Steps</div>
+                    </div>
+                    <div class="bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-white/50">
+                        <div class="impact-counter text-primary">24h</div>
+                        <div class="text-sm text-text-secondary">Processing Time</div>
+                    </div>
+                    <div class="bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-white/50">
+                        <div class="impact-counter text-secondary">95%</div>
+                        <div class="text-sm text-text-secondary">Recycling Rate</div>
+                    </div>
+                    <div class="bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-white/50">
+                        <div class="impact-counter text-primary">0</div>
+                        <div class="text-sm text-text-secondary">Cost to You</div>
+                    </div>
+                </div>
+
+                <!-- Process Navigation -->
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button class="btn-primary" onclick="scrollToSection('process-overview')">View Process</button>
+                    <button class="btn-outline" onclick="scrollToSection('packaging-guide')">Packaging Guide</button>
+                    <button class="btn-secondary" onclick="scrollToSection('impact-calculator')">Calculate Impact</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100" fill="none">
+                <defs>
+                    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#grid)"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Process Overview Section -->
+    <section id="process-overview" class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">The Complete Journey</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Follow your packaging through our circular economy process, from collection to transformation
+                </p>
+            </div>
+
+            <!-- Interactive Process Steps -->
+            <div class="relative">
+                <!-- Progress Line -->
+                <div class="hidden md:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-primary to-secondary transform -translate-y-1/2 z-0"></div>
+                
+                <div class="grid md:grid-cols-4 gap-8 relative z-10">
+                    <!-- Step 1: Collect & Sort -->
+                    <div class="process-step group" data-step="1">
+                        <div class="bg-white rounded-2xl p-8 shadow-lg border-2 border-transparent group-hover:border-primary transition-all duration-300 hover:-translate-y-2">
+                            <div class="w-16 h-16 bg-gradient-to-br from-primary to-primary-700 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-center">Collect & Sort</h3>
+                            <p class="text-text-secondary text-center mb-4">
+                                Gather your packaging materials and use our smart sorting guide to categorize them properly.
+                            </p>
+                            <div class="text-center">
+                                <button class="text-primary font-semibold hover:underline" onclick="toggleDetails('step1-details')">
+                                    Learn More →
+                                </button>
+                            </div>
+                            
+                            <!-- Expandable Details -->
+                            <div id="step1-details" class="hidden mt-4 p-4 bg-primary-50 rounded-lg">
+                                <ul class="text-sm text-text-secondary space-y-2">
+                                    <li>• Clean containers of food residue</li>
+                                    <li>• Remove labels when possible</li>
+                                    <li>• Sort by material type (plastic, cardboard, etc.)</li>
+                                    <li>• Use our mobile app for identification help</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Ship & Track -->
+                    <div class="process-step group" data-step="2">
+                        <div class="bg-white rounded-2xl p-8 shadow-lg border-2 border-transparent group-hover:border-secondary transition-all duration-300 hover:-translate-y-2">
+                            <div class="w-16 h-16 bg-gradient-to-br from-secondary to-secondary-700 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-center">Ship & Track</h3>
+                            <p class="text-text-secondary text-center mb-4">
+                                Package your materials and send them using our prepaid shipping labels with real-time tracking.
+                            </p>
+                            <div class="text-center">
+                                <button class="text-secondary font-semibold hover:underline" onclick="toggleDetails('step2-details')">
+                                    Learn More →
+                                </button>
+                            </div>
+                            
+                            <!-- Expandable Details -->
+                            <div id="step2-details" class="hidden mt-4 p-4 bg-secondary-50 rounded-lg">
+                                <ul class="text-sm text-text-secondary space-y-2">
+                                    <li>• Request free shipping labels through our platform</li>
+                                    <li>• Pack materials securely in any box</li>
+                                    <li>• Drop off at any UPS location or schedule pickup</li>
+                                    <li>• Track your shipment in real-time</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Process & Transform -->
+                    <div class="process-step group" data-step="3">
+                        <div class="bg-white rounded-2xl p-8 shadow-lg border-2 border-transparent group-hover:border-primary transition-all duration-300 hover:-translate-y-2">
+                            <div class="w-16 h-16 bg-gradient-to-br from-primary to-primary-700 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-center">Process & Transform</h3>
+                            <p class="text-text-secondary text-center mb-4">
+                                Materials are processed at certified facilities and transformed into new products or raw materials.
+                            </p>
+                            <div class="text-center">
+                                <button class="text-primary font-semibold hover:underline" onclick="toggleDetails('step3-details')">
+                                    Learn More →
+                                </button>
+                            </div>
+                            
+                            <!-- Expandable Details -->
+                            <div id="step3-details" class="hidden mt-4 p-4 bg-primary-50 rounded-lg">
+                                <ul class="text-sm text-text-secondary space-y-2">
+                                    <li>• EPA-certified processing facilities</li>
+                                    <li>• Advanced sorting and cleaning technology</li>
+                                    <li>• Materials become new packaging or products</li>
+                                    <li>• Quality control ensures 95% recycling rate</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Measure Impact -->
+                    <div class="process-step group" data-step="4">
+                        <div class="bg-white rounded-2xl p-8 shadow-lg border-2 border-transparent group-hover:border-secondary transition-all duration-300 hover:-translate-y-2">
+                            <div class="w-16 h-16 bg-gradient-to-br from-secondary to-secondary-700 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-center">Measure Impact</h3>
+                            <p class="text-text-secondary text-center mb-4">
+                                Track your environmental impact with verified metrics and see how your actions create change.
+                            </p>
+                            <div class="text-center">
+                                <button class="text-secondary font-semibold hover:underline" onclick="toggleDetails('step4-details')">
+                                    Learn More →
+                                </button>
+                            </div>
+                            
+                            <!-- Expandable Details -->
+                            <div id="step4-details" class="hidden mt-4 p-4 bg-secondary-50 rounded-lg">
+                                <ul class="text-sm text-text-secondary space-y-2">
+                                    <li>• Real-time impact dashboard updates</li>
+                                    <li>• CO₂ reduction calculations</li>
+                                    <li>• Plastic waste diverted from landfills</li>
+                                    <li>• Community impact comparisons</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Packaging Guide -->
+    <section id="packaging-guide" class="section-padding bg-gradient-to-br from-secondary-50 to-primary-50">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Packaging Identification Guide</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Not sure what can be returned? Use our interactive guide to identify packaging types and learn the best return methods.
+                </p>
+            </div>
+
+            <!-- Packaging Categories -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Plastic Packaging -->
+                <div class="card group hover:shadow-impact transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">Plastic Containers</h3>
+                            <div class="text-sm text-success-600 font-semibold">✓ Accepted</div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-4">Food containers, bottles, jars, and packaging films from online orders.</p>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-center text-success-600">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Takeout containers
+                        </div>
+                        <div class="flex items-center text-success-600">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Shipping bubble wrap
+                        </div>
+                        <div class="flex items-center text-success-600">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Product packaging
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cardboard Packaging -->
+                <div class="card group hover:shadow-impact transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-orange-400 to-orange-600 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">Cardboard & Paper</h3>
+                            <div class="text-sm text-success-600 font-semibold">✓ Accepted</div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-4">Shipping boxes, product packaging, and paper-based materials.</p>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-center text-success-600">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Amazon boxes
+                        </div>
+                        <div class="flex items-center text-success-600">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Product inserts
+                        </div>
+                        <div class="flex items-center text-success-600">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Cereal boxes
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mixed Materials -->
+                <div class="card group hover:shadow-impact transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">Complex Packaging</h3>
+                            <div class="text-sm text-warning-600 font-semibold">⚠ Special Handling</div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-4">Multi-material packaging that requires specialized processing.</p>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-center text-warning-600">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                            </svg>
+                            Chip bags (foil-lined)
+                        </div>
+                        <div class="flex items-center text-warning-600">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                            </svg>
+                            Tetra paks
+                        </div>
+                        <div class="flex items-center text-warning-600">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                            </svg>
+                            Blister packs
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visual Recognition Tool -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg border border-border-light">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold mb-4">AI-Powered Package Identifier</h3>
+                    <p class="text-text-secondary">
+                        Take a photo of your packaging and our AI will identify the material type and provide return instructions.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white font-bold text-sm">1</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Capture Image</h4>
+                                <p class="text-text-secondary">Take a clear photo of your packaging item</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white font-bold text-sm">2</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">AI Analysis</h4>
+                                <p class="text-text-secondary">Our system identifies material composition and recycling codes</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white font-bold text-sm">3</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Get Instructions</h4>
+                                <p class="text-text-secondary">Receive personalized return instructions and impact estimates</p>
+                            </div>
+                        </div>
+
+                        <button class="btn-primary w-full">Try Package Identifier</button>
+                    </div>
+
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/3735747/pexels-photo-3735747.jpeg?auto=compress&cs=tinysrgb&w=800" alt="AI package identification demo" class="rounded-xl shadow-lg w-full h-64 object-cover" onerror="this.src='https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                        
+                        <!-- Overlay UI Elements -->
+                        <div class="absolute inset-0 bg-black/20 rounded-xl flex items-center justify-center">
+                            <div class="bg-white/90 backdrop-blur-sm rounded-lg p-4 text-center">
+                                <svg class="w-12 h-12 text-primary mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                                <div class="text-sm font-semibold">Tap to Identify</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Calculator Section -->
+    <section id="impact-calculator" class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Calculate Your Potential Impact</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    See how your packaging returns translate into measurable environmental benefits
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <!-- Calculator Interface -->
+                    <div class="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold mb-6">Monthly Return Estimator</h3>
+                        
+                        <div class="space-y-6">
+                            <!-- Plastic Containers -->
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Plastic Containers per Month</label>
+                                <div class="flex items-center space-x-4">
+                                    <input type="range" id="plastic-slider" min="0" max="50" value="15" class="flex-1 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer" />
+                                    <span id="plastic-value" class="font-mono text-lg font-bold text-primary w-12">15</span>
+                                </div>
+                            </div>
+
+                            <!-- Cardboard Boxes -->
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Cardboard Boxes per Month</label>
+                                <div class="flex items-center space-x-4">
+                                    <input type="range" id="cardboard-slider" min="0" max="20" value="8" class="flex-1 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer" />
+                                    <span id="cardboard-value" class="font-mono text-lg font-bold text-secondary w-12">8</span>
+                                </div>
+                            </div>
+
+                            <!-- Mixed Materials -->
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Mixed Materials per Month</label>
+                                <div class="flex items-center space-x-4">
+                                    <input type="range" id="mixed-slider" min="0" max="30" value="12" class="flex-1 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer" />
+                                    <span id="mixed-value" class="font-mono text-lg font-bold text-primary w-12">12</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn-primary w-full mt-8" onclick="calculateImpact()">Calculate My Impact</button>
+                    </div>
+
+                    <!-- Impact Results -->
+                    <div class="space-y-6">
+                        <div class="card">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold">CO₂ Reduction</h4>
+                                    <div class="impact-counter text-green-600" id="co2-impact">24.5</div>
+                                    <div class="text-sm text-text-secondary">lbs per month</div>
+                                </div>
+                            </div>
+                            <p class="text-text-secondary text-sm">
+                                Equivalent to driving 28 fewer miles in an average car
+                            </p>
+                        </div>
+
+                        <div class="card">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold">Waste Diverted</h4>
+                                    <div class="impact-counter text-blue-600" id="waste-impact">18.2</div>
+                                    <div class="text-sm text-text-secondary">lbs per month</div>
+                                </div>
+                            </div>
+                            <p class="text-text-secondary text-sm">
+                                Prevented from entering landfills or ocean systems
+                            </p>
+                        </div>
+
+                        <div class="card">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold">New Products Created</h4>
+                                    <div class="impact-counter text-purple-600" id="products-impact">12</div>
+                                    <div class="text-sm text-text-secondary">items per month</div>
+                                </div>
+                            </div>
+                            <p class="text-text-secondary text-sm">
+                                New packaging or products made from your returns
+                            </p>
+                        </div>
+
+                        <!-- Annual Projection -->
+                        <div class="bg-gradient-to-r from-primary to-secondary text-white rounded-xl p-6">
+                            <h4 class="text-lg font-bold mb-2">Annual Impact Projection</h4>
+                            <div class="grid grid-cols-2 gap-4 text-sm">
+                                <div>
+                                    <div class="font-mono text-xl" id="annual-co2">294</div>
+                                    <div class="opacity-90">lbs CO₂ saved</div>
+                                </div>
+                                <div>
+                                    <div class="font-mono text-xl" id="annual-waste">218</div>
+                                    <div class="opacity-90">lbs waste diverted</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gamification & Progress Section -->
+    <section class="section-padding bg-gradient-to-br from-primary-50 to-secondary-50">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Track Your Progress</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Earn badges, unlock achievements, and see how you compare with the EcoReturn community
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Achievement System -->
+                <div class="space-y-8">
+                    <div class="bg-white rounded-2xl p-8 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6">Achievement Badges</h3>
+                        
+                        <div class="grid grid-cols-2 gap-6">
+                            <!-- First Return Badge -->
+                            <div class="text-center group">
+                                <div class="w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-sm">First Return</h4>
+                                <p class="text-xs text-text-secondary">Complete your first return</p>
+                            </div>
+
+                            <!-- Eco Warrior Badge -->
+                            <div class="text-center group">
+                                <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-sm">Eco Warrior</h4>
+                                <p class="text-xs text-text-secondary">50+ returns completed</p>
+                            </div>
+
+                            <!-- Community Leader Badge -->
+                            <div class="text-center group">
+                                <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-sm">Community Leader</h4>
+                                <p class="text-xs text-text-secondary">Refer 10+ friends</p>
+                            </div>
+
+                            <!-- Impact Master Badge -->
+                            <div class="text-center group">
+                                <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                    </svg>
+                                </div>
+                                <h4 class="font-semibold text-sm">Impact Master</h4>
+                                <p class="text-xs text-text-secondary">1000+ lbs CO₂ saved</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Progress Tracking -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6">Your Progress</h3>
+                        
+                        <div class="space-y-6">
+                            <!-- Monthly Goal -->
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="font-semibold">Monthly Goal</span>
+                                    <span class="text-sm text-text-secondary">23/30 returns</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-3">
+                                    <div class="bg-gradient-to-r from-primary to-secondary h-3 rounded-full" style="width: 77%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Streak Counter -->
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="font-semibold">Current Streak</span>
+                                    <span class="text-sm text-text-secondary">12 days</span>
+                                </div>
+                                <div class="flex space-x-1">
+                                    <div class="w-6 h-6 bg-secondary rounded-full"></div>
+                                    <div class="w-6 h-6 bg-secondary rounded-full"></div>
+                                    <div class="w-6 h-6 bg-secondary rounded-full"></div>
+                                    <div class="w-6 h-6 bg-secondary rounded-full"></div>
+                                    <div class="w-6 h-6 bg-gray-200 rounded-full"></div>
+                                    <div class="w-6 h-6 bg-gray-200 rounded-full"></div>
+                                    <div class="w-6 h-6 bg-gray-200 rounded-full"></div>
+                                </div>
+                            </div>
+
+                            <!-- Community Rank -->
+                            <div class="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-lg p-4">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-semibold">Community Rank</div>
+                                        <div class="text-sm text-text-secondary">Top 15% this month</div>
+                                    </div>
+                                    <div class="text-2xl font-bold text-primary">#847</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leaderboard -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6">Community Leaderboard</h3>
+                    
+                    <div class="space-y-4">
+                        <!-- Top Performers -->
+                        <div class="flex items-center justify-between p-4 bg-gradient-to-r from-yellow-50 to-yellow-100 rounded-lg border border-yellow-200">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center">
+                                    <span class="text-white font-bold text-sm">1</span>
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Sarah M.</div>
+                                    <div class="text-sm text-text-secondary">342 lbs CO₂ saved</div>
+                                </div>
+                            </div>
+                            <div class="text-yellow-600 font-bold">🏆</div>
+                        </div>
+
+                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-8 h-8 bg-gray-400 rounded-full flex items-center justify-center">
+                                    <span class="text-white font-bold text-sm">2</span>
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Mike R.</div>
+                                    <div class="text-sm text-text-secondary">298 lbs CO₂ saved</div>
+                                </div>
+                            </div>
+                            <div class="text-gray-600 font-bold">🥈</div>
+                        </div>
+
+                        <div class="flex items-center justify-between p-4 bg-orange-50 rounded-lg">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-8 h-8 bg-orange-400 rounded-full flex items-center justify-center">
+                                    <span class="text-white font-bold text-sm">3</span>
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Emma L.</div>
+                                    <div class="text-sm text-text-secondary">276 lbs CO₂ saved</div>
+                                </div>
+                            </div>
+                            <div class="text-orange-600 font-bold">🥉</div>
+                        </div>
+
+                        <!-- More entries -->
+                        <div class="space-y-2 pt-4 border-t border-gray-200">
+                            <div class="flex items-center justify-between p-2">
+                                <div class="flex items-center space-x-4">
+                                    <span class="w-6 text-center text-text-secondary">4</span>
+                                    <span class="font-medium">Alex K.</span>
+                                </div>
+                                <span class="text-sm text-text-secondary">234 lbs</span>
+                            </div>
+                            <div class="flex items-center justify-between p-2">
+                                <div class="flex items-center space-x-4">
+                                    <span class="w-6 text-center text-text-secondary">5</span>
+                                    <span class="font-medium">Jordan P.</span>
+                                </div>
+                                <span class="text-sm text-text-secondary">198 lbs</span>
+                            </div>
+                            <div class="flex items-center justify-between p-2 bg-primary-50 rounded">
+                                <div class="flex items-center space-x-4">
+                                    <span class="w-6 text-center text-primary font-bold">847</span>
+                                    <span class="font-medium text-primary">You</span>
+                                </div>
+                                <span class="text-sm text-primary font-semibold">24 lbs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 text-center">
+                        <button class="btn-outline">View Full Leaderboard</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Get answers to common questions about the EcoReturn process
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="border border-border-light rounded-lg">
+                        <button class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors" onclick="toggleFAQ('faq1')">
+                            <span class="font-semibold">How do I know if my packaging can be returned?</span>
+                            <svg class="w-5 h-5 text-text-secondary transform transition-transform" id="faq1-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div id="faq1" class="hidden px-6 pb-4">
+                            <p class="text-text-secondary">
+                                Use our AI-powered package identifier or browse our packaging guide. Most plastic containers, cardboard boxes, and shipping materials are accepted. When in doubt, take a photo and our system will provide guidance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="border border-border-light rounded-lg">
+                        <button class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors" onclick="toggleFAQ('faq2')">
+                            <span class="font-semibold">Is there really no cost to participate?</span>
+                            <svg class="w-5 h-5 text-text-secondary transform transition-transform" id="faq2-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div id="faq2" class="hidden px-6 pb-4">
+                            <p class="text-text-secondary">
+                                Absolutely free! We provide prepaid shipping labels, and there are no membership fees or hidden costs. Our business model is supported by partnerships with companies who want to source recycled materials.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="border border-border-light rounded-lg">
+                        <button class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors" onclick="toggleFAQ('faq3')">
+                            <span class="font-semibold">How do you verify the environmental impact?</span>
+                            <svg class="w-5 h-5 text-text-secondary transform transition-transform" id="faq3-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div id="faq3" class="hidden px-6 pb-4">
+                            <p class="text-text-secondary">
+                                We work with EPA-certified facilities and use third-party verification for all impact calculations. Our metrics are based on peer-reviewed research and are audited quarterly by environmental consultants.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="border border-border-light rounded-lg">
+                        <button class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors" onclick="toggleFAQ('faq4')">
+                            <span class="font-semibold">What happens to my packaging after you receive it?</span>
+                            <svg class="w-5 h-5 text-text-secondary transform transition-transform" id="faq4-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div id="faq4" class="hidden px-6 pb-4">
+                            <p class="text-text-secondary">
+                                Materials are sorted, cleaned, and processed into new raw materials or products. Plastic becomes new packaging or textiles, cardboard becomes new paper products, and complex materials are broken down into base components for reuse.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="border border-border-light rounded-lg">
+                        <button class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors" onclick="toggleFAQ('faq5')">
+                            <span class="font-semibold">How often should I send returns?</span>
+                            <svg class="w-5 h-5 text-text-secondary transform transition-transform" id="faq5-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div id="faq5" class="hidden px-6 pb-4">
+                            <p class="text-text-secondary">
+                                Send returns whenever convenient for you! Many users send monthly shipments, but you can send as frequently or infrequently as you like. We recommend waiting until you have enough materials to fill a small box for efficiency.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container-custom text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Impact Journey?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto opacity-90">
+                Join thousands of people transforming packaging waste into environmental progress. 
+                Your first return is just the beginning.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+                <button class="bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
+                    Start Your First Return
+                </button>
+                <a href="impact_dashboard.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary transition-colors">
+                    View Impact Data
+                </a>
+            </div>
+
+            <div class="text-sm opacity-75">
+                Free shipping • Real-time tracking • Verified impact metrics
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white section-padding">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <svg class="w-8 h-8 text-secondary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L8 8v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V8l-8-6z"/>
+                            <path d="M12 16l3 3 6-6" stroke="white" stroke-width="2" fill="none"/>
+                        </svg>
+                        <span class="text-xl font-bold">EcoReturn</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Transforming packaging waste into environmental impact through community-driven circular economy solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold mb-6">Platform</h4>
+                    <ul class="space-y-3">
+                        <li><a href="how_it_works.html" class="text-gray-400 hover:text-white transition-colors">How It Works</a></li>
+                        <li><a href="impact_dashboard.html" class="text-gray-400 hover:text-white transition-colors">Impact Dashboard</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors">Return Categories</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors">Community</a></li>
+                    </ul>
+                </div>
+
+                <!-- Business -->
+                <div>
+                    <h4 class="font-semibold mb-6">Business</h4>
+                    <ul class="space-y-3">
+                        <li><a href="business_solutions.html" class="text-gray-400 hover:text-white transition-colors">B2B Solutions</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors">Partner Program</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors">API Documentation</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="font-semibold mb-6">Support</h4>
+                    <ul class="space-y-3">
+                        <li><a href="support.html" class="text-gray-400 hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 EcoReturn. All Rights Reserved. Making sustainability convenient, rewarding, and community-driven.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactions -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling function
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
+        // Toggle expandable details
+        function toggleDetails(detailId) {
+            const detail = document.getElementById(detailId);
+            detail.classList.toggle('hidden');
+        }
+
+        // Impact calculator functionality
+        function updateSliderValue(sliderId, valueId) {
+            const slider = document.getElementById(sliderId);
+            const valueDisplay = document.getElementById(valueId);
+            valueDisplay.textContent = slider.value;
+        }
+
+        // Initialize slider listeners
+        document.getElementById('plastic-slider').addEventListener('input', function() {
+            updateSliderValue('plastic-slider', 'plastic-value');
+            calculateImpact();
+        });
+
+        document.getElementById('cardboard-slider').addEventListener('input', function() {
+            updateSliderValue('cardboard-slider', 'cardboard-value');
+            calculateImpact();
+        });
+
+        document.getElementById('mixed-slider').addEventListener('input', function() {
+            updateSliderValue('mixed-slider', 'mixed-value');
+            calculateImpact();
+        });
+
+        // Calculate impact based on slider values
+        function calculateImpact() {
+            const plastic = parseInt(document.getElementById('plastic-slider').value);
+            const cardboard = parseInt(document.getElementById('cardboard-slider').value);
+            const mixed = parseInt(document.getElementById('mixed-slider').value);
+
+            // Impact calculations (simplified for demo)
+            const co2Impact = (plastic * 0.8 + cardboard * 0.5 + mixed * 0.6).toFixed(1);
+            const wasteImpact = (plastic * 0.6 + cardboard * 0.4 + mixed * 0.5).toFixed(1);
+            const productsImpact = Math.floor(plastic * 0.4 + cardboard * 0.3 + mixed * 0.2);
+
+            // Update displays
+            document.getElementById('co2-impact').textContent = co2Impact;
+            document.getElementById('waste-impact').textContent = wasteImpact;
+            document.getElementById('products-impact').textContent = productsImpact;
+
+            // Annual projections
+            document.getElementById('annual-co2').textContent = Math.floor(co2Impact * 12);
+            document.getElementById('annual-waste').textContent = Math.floor(wasteImpact * 12);
+        }
+
+        // FAQ toggle functionality
+        function toggleFAQ(faqId) {
+            const faqContent = document.getElementById(faqId);
+            const faqIcon = document.getElementById(faqId + '-icon');
+            
+            faqContent.classList.toggle('hidden');
+            faqIcon.classList.toggle('rotate-180');
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Calculate initial impact
+            calculateImpact();
+
+            // Intersection Observer for animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fade-in');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all process steps and cards
+            document.querySelectorAll('.process-step, .card').forEach(el => {
+                observer.observe(el);
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

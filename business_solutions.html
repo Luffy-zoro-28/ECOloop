@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Solutions - EcoReturn | Corporate Sustainability & B2B Integration</title>
+    <meta name="description" content="Transform your business with EcoReturn's B2B sustainability solutions. Partner portal, API integration, corporate reporting, and proven waste reduction strategies for enterprise clients." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="main.css">
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fecoreturn6410back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+     <ul>
+            <li><a href="homepage.html"></a></li>
+            <li><a href="about.html"></a></li>
+            <li><a href="how_it_works.html"></a></li>
+            <li><a href="business_solutions.html"></a></li>
+            <li><a href="impact_dashboard.html"></a></li>
+            <li><a href="support.html"></a></li>
+          </ul>
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border-light">
+        <div class="container-custom">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <svg class="w-8 h-8 text-secondary" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M16 2L8 8v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V8l-8-6z"/>
+                        <path d="M12 16l3 3 6-6" stroke="white" stroke-width="2" fill="none"/>
+                    </svg>
+                    <span class="text-xl font-bold text-gradient">EcoReturn</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors">Home</a>
+                    <a href="about.html" class="text-text-secondary hover:text-primary transition-colors">About</a>
+                    <a href="how_it_works.html" class="text-text-secondary hover:text-primary transition-colors">How It Works</a>
+                    <a href="impact_dashboard.html" class="text-text-secondary hover:text-primary transition-colors">Impact</a>
+                    <a href="business_solutions.html" class="text-primary font-semibold">Business</a>
+                    <a href="support.html" class="text-text-secondary hover:text-primary transition-colors">Support</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <button class="btn-primary">Request Demo</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-border-light">
+                    <a href="homepage.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Home</a>
+                    <a href="about.html" class="block px-3 py-2 text-text-secondary hover:text-primary">About</a>
+                    <a href="how_it_works.html" class="block px-3 py-2 text-text-secondary hover:text-primary">How It Works</a>
+                    <a href="impact_dashboard.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Impact</a>
+                    <a href="business_solutions.html" class="block px-3 py-2 text-primary font-semibold">Business</a>
+                    <a href="support.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Support</a>
+                    <div class="px-3 py-2">
+                        <button class="btn-primary w-full">Request Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+        <!-- Background -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Corporate sustainability meeting" class="w-full h-full object-cover" onerror="this.src='https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=2940'; this.onerror=null;" />
+            <div class="absolute inset-0 bg-gradient-to-r from-primary-900/90 to-secondary-900/80"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 container-custom text-center text-white">
+            <div class="max-w-5xl mx-auto animate-fade-in">
+                <div class="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-6 py-2 mb-8 border border-white/20">
+                    <svg class="w-5 h-5 text-yellow-400 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <span class="text-sm font-medium">Trusted by 500+ Enterprise Partners</span>
+                </div>
+
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Enterprise Sustainability
+                    <span class="text-gradient bg-gradient-to-r from-yellow-400 to-green-400 bg-clip-text text-transparent">Solutions</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-gray-200 max-w-4xl mx-auto">
+                    Transform your corporate environmental impact with integrated B2B solutions. 
+                    API-driven sustainability tracking, white-label programs, and measurable ROI.
+                </p>
+
+                <!-- Key Metrics -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12 animate-slide-up">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                        <div class="impact-counter text-yellow-400" id="enterprise-clients">500+</div>
+                        <div class="text-sm text-gray-300 mt-2">Enterprise Clients</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                        <div class="impact-counter text-green-400" id="waste-reduced">2.8M</div>
+                        <div class="text-sm text-gray-300 mt-2">Tons Waste Reduced</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                        <div class="impact-counter text-blue-400" id="cost-savings">$45M</div>
+                        <div class="text-sm text-gray-300 mt-2">Cost Savings</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                        <div class="impact-counter text-purple-400" id="api-calls">12M+</div>
+                        <div class="text-sm text-gray-300 mt-2">Monthly API Calls</div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <button class="btn-primary text-lg px-8 py-4 hover:scale-105 transition-transform" onclick="scrollToSection('demo-section')">
+                        Schedule Demo
+                    </button>
+                    <button class="btn-outline text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary" onclick="scrollToSection('roi-calculator')">
+                        Calculate ROI
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Overview -->
+    <section class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Complete B2B Sustainability Platform</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Comprehensive tools and integrations designed for enterprise-scale environmental impact management
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Partner Portal -->
+                <div class="card group hover:shadow-impact transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Partner Portal</h3>
+                    <p class="text-text-secondary mb-6">Dedicated dashboard for real-time impact tracking, program management, and sustainability reporting.</p>
+                    <button class="btn-secondary w-full" onclick="scrollToSection('partner-portal')">Explore Portal</button>
+                </div>
+
+                <!-- API Integration -->
+                <div class="card group hover:shadow-impact transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">API Integration</h3>
+                    <p class="text-text-secondary mb-6">Seamless integration with existing systems through RESTful APIs and webhook notifications.</p>
+                    <button class="btn-secondary w-full" onclick="scrollToSection('api-docs')">View API Docs</button>
+                </div>
+
+                <!-- Sustainability Reports -->
+                <div class="card group hover:shadow-impact transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Impact Reports</h3>
+                    <p class="text-text-secondary mb-6">Automated sustainability reporting with compliance-ready metrics and third-party verification.</p>
+                    <button class="btn-secondary w-full" onclick="scrollToSection('reporting')">See Reports</button>
+                </div>
+
+                <!-- White-Label Solutions -->
+                <div class="card group hover:shadow-impact transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-gradient-to-br from-orange-400 to-orange-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">White-Label</h3>
+                    <p class="text-text-secondary mb-6">Branded sustainability programs that integrate seamlessly with your customer experience.</p>
+                    <button class="btn-secondary w-full" onclick="scrollToSection('white-label')">View Solutions</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Calculator Section -->
+    <section id="roi-calculator" class="section-padding bg-gradient-to-br from-secondary-50 to-primary-50">
+        <div class="container-custom">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-fade-in">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                        Calculate Your 
+                        <span class="text-gradient">Sustainability ROI</span>
+                    </h2>
+                    <p class="text-lg text-text-secondary mb-8">
+                        Discover the financial and environmental impact of implementing EcoReturn's 
+                        enterprise solutions in your organization.
+                    </p>
+
+                    <!-- ROI Calculator Form -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg">
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Annual Packaging Volume (tons)</label>
+                                <input type="number" id="packaging-volume" class="input-field" placeholder="500" value="500" />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Current Waste Management Cost ($/ton)</label>
+                                <input type="number" id="waste-cost" class="input-field" placeholder="150" value="150" />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Number of Employees</label>
+                                <input type="number" id="employees" class="input-field" placeholder="1000" value="1000" />
+                            </div>
+                            <button class="btn-primary w-full" onclick="calculateROI()">Calculate ROI</button>
+                        </div>
+
+                        <!-- Results -->
+                        <div id="roi-results" class="mt-8 p-6 bg-secondary-50 rounded-xl hidden">
+                            <h4 class="font-bold text-lg mb-4">Your Projected Annual Impact:</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-secondary" id="cost-savings-result">$75,000</div>
+                                    <div class="text-sm text-text-secondary">Cost Savings</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-primary" id="co2-reduction-result">125</div>
+                                    <div class="text-sm text-text-secondary">Tons CO₂ Reduced</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative animate-slide-up">
+                    <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1280" alt="Business analytics dashboard" class="rounded-2xl shadow-lg w-full h-96 object-cover" onerror="this.src='https://images.pixabay.com/photo/2016/11/27/21/42/stock-1863880_1280.jpg'; this.onerror=null;" />
+                    
+                    <!-- Floating Metrics -->
+                    <div class="absolute -top-4 -right-4 bg-white rounded-xl p-4 shadow-lg animate-pulse-slow">
+                        <div class="text-2xl font-bold text-secondary">40%</div>
+                        <div class="text-sm text-text-secondary">Waste Reduction</div>
+                    </div>
+                    
+                    <div class="absolute -bottom-4 -left-4 bg-white rounded-xl p-4 shadow-lg animate-pulse-slow" style="animation-delay: 1s;">
+                        <div class="text-2xl font-bold text-primary">18mo</div>
+                        <div class="text-sm text-text-secondary">Payback Period</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Proven Enterprise Results</h2>
+                <p class="text-xl text-text-secondary">Real outcomes from leading companies across industries</p>
+            </div>
+
+            <!-- Industry Filter -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="px-6 py-2 rounded-full bg-primary text-white font-medium" onclick="filterCases('all')">All Industries</button>
+                <button class="px-6 py-2 rounded-full bg-gray-100 text-text-secondary hover:bg-primary hover:text-white transition-colors" onclick="filterCases('retail')">Retail</button>
+                <button class="px-6 py-2 rounded-full bg-gray-100 text-text-secondary hover:bg-primary hover:text-white transition-colors" onclick="filterCases('manufacturing')">Manufacturing</button>
+                <button class="px-6 py-2 rounded-full bg-gray-100 text-text-secondary hover:bg-primary hover:text-white transition-colors" onclick="filterCases('tech')">Technology</button>
+                <button class="px-6 py-2 rounded-full bg-gray-100 text-text-secondary hover:bg-primary hover:text-white transition-colors" onclick="filterCases('food')">Food & Beverage</button>
+            </div>
+
+            <!-- Case Studies Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="case-studies-grid">
+                <!-- Case Study 1 -->
+                <div class="card case-study" data-industry="retail">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">Global Retail Chain</h3>
+                            <div class="text-sm text-text-secondary">Retail • 50,000+ employees</div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-6">Implemented white-label packaging return program across 2,500 stores, achieving 65% customer participation rate.</p>
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <div class="text-center">
+                            <div class="text-xl font-bold text-secondary">$2.3M</div>
+                            <div class="text-xs text-text-secondary">Annual Savings</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-xl font-bold text-primary">1,200</div>
+                            <div class="text-xs text-text-secondary">Tons Diverted</div>
+                        </div>
+                    </div>
+                    <button class="btn-outline w-full text-sm">View Full Case Study</button>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="card case-study" data-industry="manufacturing">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">Industrial Manufacturer</h3>
+                            <div class="text-sm text-text-secondary">Manufacturing • 15,000 employees</div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-6">Integrated API-driven sustainability tracking into ERP system, automating compliance reporting and waste management.</p>
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <div class="text-center">
+                            <div class="text-xl font-bold text-secondary">$890K</div>
+                            <div class="text-xs text-text-secondary">Annual Savings</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-xl font-bold text-primary">45%</div>
+                            <div class="text-xs text-text-secondary">Waste Reduction</div>
+                        </div>
+                    </div>
+                    <button class="btn-outline w-full text-sm">View Full Case Study</button>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="card case-study" data-industry="tech">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">Tech Unicorn</h3>
+                            <div class="text-sm text-text-secondary">Technology • 8,500 employees</div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-6">Launched employee-driven packaging return program with gamification, achieving 89% participation across global offices.</p>
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <div class="text-center">
+                            <div class="text-xl font-bold text-secondary">$450K</div>
+                            <div class="text-xs text-text-secondary">Annual Savings</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-xl font-bold text-primary">320</div>
+                            <div class="text-xs text-text-secondary">Tons Diverted</div>
+                        </div>
+                    </div>
+                    <button class="btn-outline w-full text-sm">View Full Case Study</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- API Documentation Preview -->
+    <section id="api-docs" class="section-padding bg-gray-900 text-white">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Developer-First Integration</h2>
+                <p class="text-xl text-gray-300">RESTful APIs designed for seamless enterprise integration</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                <!-- API Explorer -->
+                <div class="bg-gray-800 rounded-2xl p-8">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-xl font-bold">Interactive API Explorer</h3>
+                        <div class="flex space-x-2">
+                            <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                            <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                            <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                        </div>
+                    </div>
+
+                    <!-- API Endpoint Tabs -->
+                    <div class="flex space-x-4 mb-6">
+                        <button class="px-4 py-2 bg-primary rounded-lg text-sm font-medium" onclick="showEndpoint('returns')">Returns</button>
+                        <button class="px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg text-sm font-medium" onclick="showEndpoint('impact')">Impact</button>
+                        <button class="px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg text-sm font-medium" onclick="showEndpoint('reports')">Reports</button>
+                    </div>
+
+                    <!-- Code Example -->
+                    <div class="bg-gray-900 rounded-lg p-4 font-mono text-sm">
+                        <div id="api-example">
+                            <div class="text-green-400 mb-2">POST /api/v1/returns</div>
+                            <div class="text-gray-400 mb-4">Content-Type: application/json</div>
+                            <div class="text-yellow-400">Authorization: Bearer bs_live_4k8n2m9x7q1p</div>
+                            <br />
+                            <div class="text-blue-400">{</div>
+                            <div class="ml-4 text-white">"company_id": "corp_123",</div>
+                            <div class="ml-4 text-white">"packaging_type": "cardboard",</div>
+                            <div class="ml-4 text-white">"weight_kg": 150.5,</div>
+                            <div class="ml-4 text-white">"location": "warehouse_a"</div>
+                            <div class="text-blue-400">}</div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 flex space-x-4">
+                        <button class="btn-primary text-sm">Try It Live</button>
+                        <button class="btn-outline text-sm border-gray-600 text-gray-300 hover:bg-gray-700">View Docs</button>
+                    </div>
+                </div>
+
+                <!-- Integration Benefits -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">Enterprise-Grade Features</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">99.9% Uptime SLA</h4>
+                                    <p class="text-gray-400 text-sm">Enterprise-grade reliability with global CDN</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Real-time Webhooks</h4>
+                                    <p class="text-gray-400 text-sm">Instant notifications for all sustainability events</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">SOC 2 Compliant</h4>
+                                    <p class="text-gray-400 text-sm">Enterprise security and data protection standards</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Dedicated Support</h4>
+                                    <p class="text-gray-400 text-sm">24/7 technical support with dedicated account manager</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Start -->
+                    <div class="bg-gray-800 rounded-xl p-6">
+                        <h4 class="font-bold mb-4">Quick Start Guide</h4>
+                        <div class="space-y-3 text-sm">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center text-xs font-bold">1</div>
+                                <span>Get API credentials from partner portal</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center text-xs font-bold">2</div>
+                                <span>Configure webhook endpoints</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center text-xs font-bold">3</div>
+                                <span>Start tracking sustainability data</span>
+                            </div>
+                        </div>
+                        <button class="btn-primary w-full mt-6 text-sm">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Portal Preview -->
+    <section id="partner-portal" class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Partner Portal Dashboard</h2>
+                <p class="text-xl text-text-secondary">Real-time visibility into your sustainability program performance</p>
+            </div>
+
+            <!-- Dashboard Preview -->
+            <div class="bg-gray-50 rounded-2xl p-8 shadow-lg">
+                <div class="flex items-center justify-between mb-8">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Corporate Dashboard</h3>
+                            <p class="text-text-secondary">Demo Account: demo@corporate.com</p>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4">
+                        <button class="btn-outline text-sm">Export Report</button>
+                        <button class="btn-primary text-sm">Live Demo</button>
+                    </div>
+                </div>
+
+                <!-- Dashboard Metrics -->
+                <div class="grid md:grid-cols-4 gap-6 mb-8">
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"/>
+                                </svg>
+                            </div>
+                            <span class="text-xs text-green-600 bg-green-100 px-2 py-1 rounded-full">+12%</span>
+                        </div>
+                        <div class="text-2xl font-bold text-gray-900">847</div>
+                        <div class="text-sm text-text-secondary">Tons Processed</div>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                                </svg>
+                            </div>
+                            <span class="text-xs text-blue-600 bg-blue-100 px-2 py-1 rounded-full">+8%</span>
+                        </div>
+                        <div class="text-2xl font-bold text-gray-900">$127K</div>
+                        <div class="text-sm text-text-secondary">Cost Savings</div>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                </svg>
+                            </div>
+                            <span class="text-xs text-purple-600 bg-purple-100 px-2 py-1 rounded-full">+23%</span>
+                        </div>
+                        <div class="text-2xl font-bold text-gray-900">89%</div>
+                        <div class="text-sm text-text-secondary">Participation Rate</div>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
+                                <svg class="w-5 h-5 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                </svg>
+                            </div>
+                            <span class="text-xs text-orange-600 bg-orange-100 px-2 py-1 rounded-full">+15%</span>
+                        </div>
+                        <div class="text-2xl font-bold text-gray-900">342</div>
+                        <div class="text-sm text-text-secondary">Tons CO₂ Saved</div>
+                    </div>
+                </div>
+
+                <!-- Chart Placeholder -->
+                <div class="bg-white rounded-xl p-6 shadow-sm">
+                    <div class="flex items-center justify-between mb-6">
+                        <h4 class="font-bold">Sustainability Impact Trends</h4>
+                        <div class="flex space-x-2">
+                            <button class="px-3 py-1 bg-primary text-white rounded text-sm">30D</button>
+                            <button class="px-3 py-1 bg-gray-100 text-text-secondary rounded text-sm">90D</button>
+                            <button class="px-3 py-1 bg-gray-100 text-text-secondary rounded text-sm">1Y</button>
+                        </div>
+                    </div>
+                    <div class="h-64 bg-gradient-to-r from-primary-50 to-secondary-50 rounded-lg flex items-center justify-center">
+                        <div class="text-center">
+                            <svg class="w-16 h-16 text-primary mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                            </svg>
+                            <p class="text-text-secondary">Interactive charts and analytics available in live demo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Request Section -->
+    <section id="demo-section" class="section-padding bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container-custom text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Business?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto opacity-90">
+                Join 500+ enterprise partners already reducing waste, cutting costs, and achieving sustainability goals with EcoReturn.
+            </p>
+            
+            <!-- Demo Request Form -->
+            <div class="max-w-2xl mx-auto bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <input type="text" placeholder="Company Name" class="input-field bg-white/20 border-white/30 text-white placeholder-white/70" />
+                    <input type="email" placeholder="Business Email" class="input-field bg-white/20 border-white/30 text-white placeholder-white/70" />
+                    <input type="text" placeholder="Your Name" class="input-field bg-white/20 border-white/30 text-white placeholder-white/70" />
+                    <select class="input-field bg-white/20 border-white/30 text-white">
+                        <option value>Company Size</option>
+                        <option value="small">1-100 employees</option>
+                        <option value="medium">101-1000 employees</option>
+                        <option value="large">1000+ employees</option>
+                    </select>
+                </div>
+                <textarea placeholder="Tell us about your sustainability goals..." class="input-field bg-white/20 border-white/30 text-white placeholder-white/70 h-24 mb-6"></textarea>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
+                        Schedule Demo Call
+                    </button>
+                    <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary transition-colors">
+                        Download Case Studies
+                    </button>
+                </div>
+            </div>
+
+            <div class="mt-8 text-sm opacity-75">
+                Free consultation • No commitment required • Custom implementation plan included
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Trust Signals -->
+    <section class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Enterprise Trust & Compliance</h2>
+                <p class="text-xl text-text-secondary">Meeting the highest standards for security, compliance, and environmental impact</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- SOC 2 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">SOC 2 Type II</h3>
+                    <p class="text-text-secondary">Comprehensive security and availability controls</p>
+                </div>
+
+                <!-- B-Corp -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">B-Corp Certified</h3>
+                    <p class="text-text-secondary">Verified social and environmental performance</p>
+                </div>
+
+                <!-- ISO 14001 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">ISO 14001</h3>
+                    <p class="text-text-secondary">Environmental management system certification</p>
+                </div>
+
+                <!-- GDPR -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">GDPR Compliant</h3>
+                    <p class="text-text-secondary">Full data protection and privacy compliance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white section-padding">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <svg class="w-8 h-8 text-secondary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L8 8v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V8l-8-6z"/>
+                            <path d="M12 16l3 3 6-6" stroke="white" stroke-width="2" fill="none"/>
+                        </svg>
+                        <span class="text-xl font-bold">EcoReturn</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Transforming packaging waste into environmental impact through community-driven circular economy solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Platform -->
+                <div>
+                    <h4 class="font-semibold mb-6">Platform</h4>
+                    <ul class="space-y-3">
+                        <li><a href="how_it_works.html" class="text-gray-400 hover:text-white transition-colors">How It Works</a></li>
+                        <li><a href="impact_dashboard.html" class="text-gray-400 hover:text-white transition-colors">Impact Dashboard</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors">Return Categories</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors">Community</a></li>
+                    </ul>
+                </div>
+
+                <!-- Business -->
+                <div>
+                    <h4 class="font-semibold mb-6">Business</h4>
+                    <ul class="space-y-3">
+                        <li><a href="business_solutions.html" class="text-gray-400 hover:text-white transition-colors">B2B Solutions</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors">Partner Program</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors">API Documentation</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="font-semibold mb-6">Support</h4>
+                    <ul class="space-y-3">
+                        <li><a href="support.html" class="text-gray-400 hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 EcoReturn. All Rights Reserved. Making sustainability convenient, rewarding, and community-driven.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scroll to sections
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
+        // ROI Calculator
+        function calculateROI() {
+            const volume = parseFloat(document.getElementById('packaging-volume').value) || 0;
+            const wasteCost = parseFloat(document.getElementById('waste-cost').value) || 0;
+            const employees = parseFloat(document.getElementById('employees').value) || 0;
+
+            // Simple ROI calculation (mock formula)
+            const costSavings = Math.round(volume * wasteCost * 0.4);
+            const co2Reduction = Math.round(volume * 0.25);
+
+            document.getElementById('cost-savings-result').textContent = '$' + costSavings.toLocaleString();
+            document.getElementById('co2-reduction-result').textContent = co2Reduction.toLocaleString();
+            
+            document.getElementById('roi-results').classList.remove('hidden');
+        }
+
+        // Case study filtering
+        function filterCases(industry) {
+            const cases = document.querySelectorAll('.case-study');
+            const buttons = document.querySelectorAll('[onclick^="filterCases"]');
+            
+            // Update button states
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-primary', 'text-white');
+                btn.classList.add('bg-gray-100', 'text-text-secondary');
+            });
+            event.target.classList.remove('bg-gray-100', 'text-text-secondary');
+            event.target.classList.add('bg-primary', 'text-white');
+
+            // Filter cases
+            cases.forEach(caseEl => {
+                if (industry === 'all' || caseEl.dataset.industry === industry) {
+                    caseEl.style.display = 'block';
+                } else {
+                    caseEl.style.display = 'none';
+                }
+            });
+        }
+
+        // API endpoint switcher
+        function showEndpoint(endpoint) {
+            const examples = {
+                'returns': `<div class="text-green-400 mb-2">POST /api/v1/returns</div>
+                           <div class="text-gray-400 mb-4">Content-Type: application/json</div>
+                           <div class="text-yellow-400">Authorization: Bearer bs_live_4k8n2m9x7q1p</div>
+                           <br>
+                           <div class="text-blue-400">{</div>
+                           <div class="ml-4 text-white">"company_id": "corp_123",</div>
+                           <div class="ml-4 text-white">"packaging_type": "cardboard",</div>
+                           <div class="ml-4 text-white">"weight_kg": 150.5,</div>
+                           <div class="ml-4 text-white">"location": "warehouse_a"</div>
+                           <div class="text-blue-400">}</div>`,
+                'impact': `<div class="text-green-400 mb-2">GET /api/v1/impact/summary</div>
+                          <div class="text-gray-400 mb-4">Authorization: Bearer bs_live_4k8n2m9x7q1p</div>
+                          <br>
+                          <div class="text-blue-400">{</div>
+                          <div class="ml-4 text-white">"total_weight_kg": 15420.5,</div>
+                          <div class="ml-4 text-white">"co2_saved_kg": 3425.8,</div>
+                          <div class="ml-4 text-white">"cost_savings_usd": 12750,</div>
+                          <div class="ml-4 text-white">"period": "30_days"</div>
+                          <div class="text-blue-400">}</div>`,
+                'reports': `<div class="text-green-400 mb-2">GET /api/v1/reports/sustainability</div>
+                           <div class="text-gray-400 mb-4">Authorization: Bearer bs_live_4k8n2m9x7q1p</div>
+                           <br>
+                           <div class="text-blue-400">{</div>
+                           <div class="ml-4 text-white">"report_id": "rpt_2025_q1",</div>
+                           <div class="ml-4 text-white">"format": "pdf",</div>
+                           <div class="ml-4 text-white">"compliance": "epa_certified",</div>
+                           <div class="ml-4 text-white">"download_url": "..."</div>
+                           <div class="text-blue-400">}</div>`
+            };
+
+            document.getElementById('api-example').innerHTML = examples[endpoint];
+
+            // Update button states
+            const buttons = document.querySelectorAll('[onclick^="showEndpoint"]');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-primary');
+                btn.classList.add('bg-gray-700', 'hover:bg-gray-600');
+            });
+            event.target.classList.remove('bg-gray-700', 'hover:bg-gray-600');
+            event.target.classList.add('bg-primary');
+        }
+
+        // Animated counters
+        function animateCounter(element, target, duration = 2000) {
+            let start = 0;
+            const increment = target / (duration / 16);
+            const timer = setInterval(() => {
+                start += increment;
+                if (start >= target) {
+                    element.textContent = target.toLocaleString();
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(start).toLocaleString();
+                }
+            }, 16);
+        }
+
+        // Initialize counters when page loads
+        window.addEventListener('load', function() {
+            animateCounter(document.getElementById('enterprise-clients'), 500);
+            animateCounter(document.getElementById('waste-reduced'), 2800000);
+            animateCounter(document.getElementById('cost-savings'), 45000000);
+            animateCounter(document.getElementById('api-calls'), 12000000);
+        });
+
+        // Scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards and sections
+        document.querySelectorAll('.card, .animate-slide-up').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
